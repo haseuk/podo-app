@@ -1,0 +1,515 @@
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 870px) {
+  .hel {
+    font-family: Helvetica, sans-serif;
+  }
+  .hel-c {
+    font-family: 'Helvetica Condensed', sans-serif;
+  }
+  .hel-r {
+    font-family: "Helvetica Rounded", sans-serif;
+  }
+  .c-7 {
+    color: #707070;
+  }
+  a {
+    cursor: pointer;
+  }
+  img {
+    display: inline-block;
+    backface-visibility: hidden;
+    image-rendering: auto;
+  }
+  .shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  }
+  .mo {
+    display: inline-block;
+  }
+  .web {
+    display: none;
+  }
+  html {
+    font-size: 18px;
+    font-family: "Apple SD Gothic Neo", sans-serif;
+  }
+  .container {
+    font-size: 0vw;
+    text-align: center;
+  }
+  .container .wrap header {
+    border-bottom: 0;
+    margin-bottom: 10vw;
+  }
+  .container .wrap header .h-inner {
+    width: 100%;
+    padding-top: 0vw;
+    padding-right: 3vw;
+    padding-bottom: 0vw;
+    padding-left: 1.75vw;
+    box-sizing: border-box;
+    zoom: 1;
+    text-align: left;
+  }
+  .container .wrap header .h-inner:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .container .wrap header .h-inner h1 {
+    height: 15vw;
+    float: left;
+  }
+  .container .wrap header .h-inner h1 a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-left: 13vw;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .container .wrap header .h-inner h1 a p {
+    font-size: 7.75vw;
+    color: #624769;
+    height: 11.5vw;
+    line-height: 11.5vw;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 2.25vw;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .container .wrap header .h-inner h1 a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0vw;
+    top: 1.75vw;
+    right: auto;
+    bottom: auto;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/logo.svg');
+    background-size: contain;
+    width: 11.25vw;
+    height: 11.25vw;
+  }
+  .container .wrap header .h-inner .menu-btn {
+    width: 15vw;
+    height: 15vw;
+    float: right;
+    display: inline-block;
+    position: relative;
+  }
+  .container .wrap header .h-inner .menu-btn:after {
+    content: '';
+    display: block;
+    width: 5.75vw;
+    height: 4.75vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon_menu.svg');
+    background-size: contain;
+    position: absolute;
+    right: 0vw;
+    top: 4.75vw;
+    left: auto;
+    bottom: auto;
+  }
+  .container .wrap header .h-inner ul {
+    font-family: "Helvetica Rounded", sans-serif;
+    display: inline-block;
+    margin-top: 5vw;
+    padding-left: 35vw;
+    box-sizing: border-box;
+    display: none;
+  }
+  .container .wrap header .h-inner ul li {
+    font-size: 5vw;
+    height: 9.25vw;
+    line-height: 9.25vw;
+    font-weight: 700;
+    text-align: center;
+    color: #707070;
+    margin: 0vw;
+    display: block;
+    padding-top: 0vw;
+    text-align: left;
+  }
+  .container .wrap header .h-inner ul li a {
+    width: 100%;
+    height: 100%;
+  }
+  .container .wrap header .h-inner ul li:first-child {
+    margin-left: 0vw;
+  }
+  .container .wrap header .h-inner ul li:last-child {
+    margin-right: 0vw;
+  }
+  .container .wrap header.open .h-inner ul {
+    display: inline-block;
+  }
+  .container .wrap article {
+    margin-top: 7.5vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .container .wrap article section {
+    margin-bottom: 32.5vw;
+    width: auto;
+  }
+  .container .wrap article section .inner {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  .container .wrap article section .inner p {
+    font-weight: 700;
+    color: #000;
+  }
+  .container .wrap article section .inner p.tit {
+    font-size: 7.5vw;
+    margin-bottom: 3.25vw;
+  }
+  .container .wrap article section .inner p.sub-tit {
+    font-size: 3.75vw;
+    color: #000;
+  }
+  .container .wrap article section .inner p.txt {
+    font-size: 2.75vw;
+    margin-bottom: 8.75vw;
+  }
+  .container .wrap article section.visual .inner {
+    padding-top: 0vw;
+    margin-top: 115vw;
+  }
+  .container .wrap article section.visual .inner .app-down {
+    font-size: 4.5vw;
+    width: 47.25vw;
+    height: 11vw;
+    line-height: 11vw;
+    border-radius: 2.5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container .wrap article section.visual .m1 {
+    width: 85.75vw;
+    height: 107.5vw;
+    margin-left: 0vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/mobile1.png');
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -43vw;
+  }
+  .container .wrap article section.visual .v-txt {
+    font-size: 3.75vw;
+    line-height: 5.75vw;
+    padding: 5vw;
+    box-sizing: border-box;
+    margin-top: 12.5vw;
+  }
+  .container .wrap article section.sec2 {
+    position: relative;
+  }
+  .container .wrap article section.sec2 .inner {
+    margin-top: 115vw;
+  }
+  .container .wrap article section.sec2 .inner p.tit {
+    margin-top: 4.25vw;
+    margin-right: 0vw;
+    margin-bottom: 9.25vw;
+    margin-left: 0vw;
+  }
+  .container .wrap article section.sec2 .inner p.sub-tit {
+    margin-bottom: 10vw;
+  }
+  .container .wrap article section.sec2 .inner .cell table tr th,
+  .container .wrap article section.sec2 .inner .cell table tr td {
+    font-size: 3.75vw;
+    font-weight: 700;
+    vertical-align: top;
+    padding-bottom: 4vw;
+  }
+  .container .wrap article section.sec2 .inner .cell table tr td {
+    color: #707070;
+    padding-left: 7.5vw;
+  }
+  .container .wrap article section.sec2 .inner .cell table tr.line1 th,
+  .container .wrap article section.sec2 .inner .cell table tr.line1 td {
+    font-size: 7.5vw;
+    padding-bottom: 2.5vw;
+    opacity: 0.6;
+  }
+  .container .wrap article section.sec2 .inner .cell table tr.line1 th {
+    border-bottom: 4px solid #C4C4C4;
+  }
+  .container .wrap article section.sec2 .m2 {
+    margin-left: 0vw;
+    width: 63.25vw;
+    height: 110.5vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/mobile4-l_podo.png');
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -31.75vw;
+  }
+  .container .wrap article section.sec3 .m3 {
+    width: 72.25vw;
+    height: 112.5vw;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/mobile5-l_podo.png');
+    background-size: contain;
+  }
+  .container .wrap article section.sec3 .inner {
+    margin-top: 11.5vw;
+    box-sizing: border-box;
+    text-align: right;
+    width: 100%;
+    padding-top: 0vw;
+    padding-right: 9.75vw;
+    padding-bottom: 0vw;
+    padding-left: 0vw;
+    border: 0;
+    box-shadow: none;
+  }
+  .container .wrap article section.sec3 .inner p.tit {
+    margin-bottom: 6.25vw;
+  }
+  .container .wrap article section.sec3 .inner p.sub-tit + .sub-tit {
+    margin-top: 8.5vw;
+  }
+  .container .wrap article section.sec4 {
+    margin-bottom: 0vw;
+    position: relative;
+  }
+  .container .wrap article section.sec4 .inner {
+    margin-top: 124vw;
+  }
+  .container .wrap article section.sec4 .inner p.tit {
+    margin-bottom: 10.5vw;
+  }
+  .container .wrap article section.sec4 .inner p.sub-tit {
+    margin-bottom: 8.75vw;
+    font-weight: 400;
+  }
+  .container .wrap article section.sec4 .inner .detail {
+    font-size: 5.75vw;
+    padding-bottom: 2vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #707070;
+  }
+  .container .wrap article section.sec4 .m4 {
+    width: 93.5vw;
+    height: 114.25vw;
+    margin-left: 0vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/mobile6.png');
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -46.75vw;
+  }
+  .container .wrap article section.sec4 .next {
+    font-size: 5vw;
+    color: #696969;
+    width: 23.25vw;
+    height: 10vw;
+    line-height: 10vw;
+    background-color: #E1E1E1;
+    border-radius: 5vw;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+    margin-left: 125vw;
+  }
+  .container .wrap article section.sec5 {
+    position: relative;
+    margin-top: 30vw;
+  }
+  .container .wrap article section.sec5:after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/v-bg.png');
+    background-size: contain;
+    width: 108.5vw;
+    height: 61vw;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: 0vw;
+  }
+  .container .wrap article section.sec5 .tit {
+    font-size: 5.5vw;
+    line-height: 7.25vw;
+    font-weight: 400;
+    color: #fff;
+    margin: 0vw;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 22.5vw;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+  }
+  .container .wrap article section.sec6 {
+    width: 100%;
+  }
+  .container .wrap article section.sec6 .mo-swiper {
+    width: 100%;
+    padding-top: 0vw;
+    padding-right: 4vw;
+    padding-bottom: 15vw;
+    padding-left: 4vw;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-slide {
+    width: 48vw;
+    height: 33.25vw;
+    position: relative;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+    box-sizing: border-box;
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-slide img {
+    position: absolute;
+    left: 50%;
+    bottom: 12.5vw;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-slide img.kt {
+    width: 37.5vw;
+    height: 11.75vw;
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-slide img.mobi {
+    width: 35.25vw;
+    height: 13.75vw;
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-pagination {
+    bottom: 0vw;
+  }
+  .container .wrap article section.sec6 .mo-swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #707070;
+    margin-top: 0vw;
+    margin-right: 2vw;
+    margin-bottom: 0vw;
+    margin-left: 2vw;
+  }
+  .container .wrap article section.sec6 .web-swiper {
+    display: none;
+  }
+  .container .wrap article section.sec7 {
+    background-color: #509CFF;
+    width: 100%;
+    padding-top: 8vw;
+    box-sizing: border-box;
+    margin-bottom: 0vw;
+  }
+  .container .wrap article section.sec7 .inner .tit {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 7vw;
+  }
+  .container .wrap article section.sec7 .inner .get-btns {
+    margin-top: 7vw;
+    margin-right: 0vw;
+    margin-bottom: 4.25vw;
+    margin-left: 0vw;
+    text-align: center;
+  }
+  .container .wrap article section.sec7 .inner .get-btns a {
+    font-size: 3.5vw;
+    color: #fff;
+    width: 28.75vw;
+    height: 10.5vw;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    line-height: 10.5vw;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5.25vw;
+    margin-top: 0vw;
+    margin-right: 0.75vw;
+    margin-bottom: 0vw;
+    margin-left: 0.75vw;
+    padding-top: 0vw;
+    padding-right: 0vw;
+    padding-bottom: 0vw;
+    padding-left: 4.75vw;
+    position: relative;
+  }
+  .container .wrap article section.sec7 .inner .get-btns a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 3.5vw;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+  .container .wrap article section.sec7 .inner .get-btns a.ios:after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/podo_ios.svg');
+    background-size: contain;
+    width: 4.75vw;
+    height: 4.75vw;
+  }
+  .container .wrap article section.sec7 .inner .get-btns a.gg:after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/podo_android.svg');
+    background-size: contain;
+    width: 3.625vw;
+    height: 5.875vw;
+  }
+  .container .wrap article section.sec7 .inner .get-btns a.ms:after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/podo_windows.svg');
+    background-size: contain;
+    width: 4.1vw;
+    height: 4.75vw;
+  }
+  .container .wrap article section.sec7 .empty {
+    width: 100%;
+    height: 16.25vw;
+    background-color: #000;
+  }
+}
+/*# sourceMappingURL=style-mo.css.map */

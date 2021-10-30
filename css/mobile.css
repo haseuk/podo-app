@@ -1,0 +1,389 @@
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+a {
+  cursor: pointer;
+}
+img {
+  display: inline-block;
+  backface-visibility: hidden;
+  image-rendering: auto;
+}
+h2 {
+  font-size: 10vw;
+  color: #000;
+}
+h3 {
+  font-size: 5.75vw;
+  line-height: 7.75vw;
+  color: #000;
+}
+h4 {
+  font-size: 5vw;
+  line-height: 6.75vw;
+  color: #000;
+}
+.btn {
+  color: #fff;
+  display: inline-block;
+  border-radius: 2.5vw;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 700;
+  background-color: #614668;
+  cursor: pointer;
+}
+html {
+  font-size: 18px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+.container {
+  font-size: 0vw;
+  text-align: center;
+}
+.container .wrap header {
+  position: fixed;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  padding: 4vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #707070;
+  zoom: 1;
+  text-align: left;
+  background-color: #fff;
+  z-index: 10;
+}
+.container .wrap header:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap header h1 {
+  float: left;
+  margin-top: 1.25vw;
+}
+.container .wrap header h1 img {
+  width: 19.75vw;
+  height: 5.25vw;
+  margin-right: 2.5vw;
+}
+.container .wrap header p {
+  font-size: 5vw;
+  color: #707070;
+  line-height: 6.75vw;
+  font-weight: 700;
+  margin-top: 0.75vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap header .status {
+  float: right;
+  margin-top: 0.75vw;
+}
+.container .wrap header .status a {
+  margin-left: 2.5vw;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap header .status a.recep:after {
+  content: '';
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  right: 0vw;
+  bottom: 0.75vw;
+  left: auto;
+  top: auto;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/icon_circle_red.svg');
+  background-size: contain;
+}
+.container .wrap header .status a img {
+  width: auto;
+  height: 6.61vw;
+}
+.container .wrap article {
+  overflow: hidden;
+  position: absolute;
+  left: 0vw;
+  top: 15.75vw;
+  right: auto;
+  bottom: auto;
+  padding-top: 10vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .wrap article section {
+  text-align: left;
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+}
+.container .wrap article section .m-price {
+  margin-bottom: 9vw;
+}
+.container .wrap article section .m-price p {
+  font-size: 12.5vw;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section .m-price p s {
+  letter-spacing: -0.05em;
+}
+.container .wrap article section .m-price .btn {
+  font-size: 5vw;
+  width: 23.75vw;
+  height: 10.5vw;
+  line-height: 10.5vw;
+  float: right;
+  margin-top: 4.25vw;
+}
+.container .wrap article section.p1 {
+  padding-bottom: 15vw;
+}
+.container .wrap article section.p1 .cell {
+  margin-bottom: 8.75vw;
+}
+.container .wrap article section.p1 .cell h3 {
+  margin-bottom: 6.5vw;
+}
+.container .wrap article section.p1 .cell .c-inner {
+  zoom: 1;
+}
+.container .wrap article section.p1 .cell .c-inner:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap article section.p1 .cell .c-inner img {
+  width: 21vw;
+  height: 13.5vw;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7vw;
+}
+.container .wrap article section.p1 .cell .c-inner .card-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p1 .cell .c-inner .card-info p {
+  font-size: 5vw;
+  line-height: 6.75vw;
+  color: #717171;
+  margin-bottom: 0.75vw;
+}
+.container .wrap article section.p1 .cell .c-inner .card-info p + p {
+  font-size: 4.5vw;
+  margin-bottom: 0vw;
+}
+.container .wrap article section.p1 .cell .c-inner .c-chk {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+.container .wrap article section.p1 .cell .c-inner .c-chk label input[type=radio] + i {
+  width: 5vw;
+  height: 5vw;
+  border: 1px solid #212121;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .wrap article section.p1 .cell .c-inner .c-chk label input[type=radio]:checked + i {
+  position: relative;
+}
+.container .wrap article section.p1 .cell .c-inner .c-chk label input[type=radio]:checked + i:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0.75vw;
+  top: 0.75vw;
+  right: auto;
+  bottom: auto;
+  width: 3.5vw;
+  height: 3.5vw;
+  background-color: #212121;
+  border-radius: 50%;
+}
+.container .wrap article section.p1 .cell .c-inner .c-chk label .btn {
+  font-size: 4.25vw;
+  width: 15.5vw;
+  height: 7vw;
+  line-height: 7vw;
+  margin-top: 2.25vw;
+}
+.container .wrap article section.p1 .cell + .cell {
+  margin-bottom: 8.5vw;
+}
+.container .wrap article section.p1 .cell + .cell h3 {
+  margin-bottom: 0.75vw;
+}
+.container .wrap article section.p1 .cell + .cell img {
+  width: 25.5vw;
+  height: 25.5vw;
+  margin-right: 2.5vw;
+}
+.container .wrap article section.p1 .cell + .cell .c-chk {
+  margin-top: 5vw;
+}
+.container .wrap article section.p1 .b-txt {
+  padding-top: 3.5vw;
+  box-sizing: border-box;
+  position: relative;
+}
+.container .wrap article section.p1 .b-txt:after {
+  content: '';
+  display: block;
+  width: 105vw;
+  height: 0.25vw;
+  background-color: #707070;
+  position: absolute;
+  left: 50%;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  margin-left: -52.5vw;
+}
+.container .wrap article section.p1 .b-txt h2 {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.75vw;
+}
+.container .wrap article section.p1 .b-txt .txt {
+  font-size: 4.5vw;
+  line-height: 6.75vw;
+  font-weight: 500;
+}
+.container .wrap article section.p2 ul li {
+  width: 88vw;
+  height: 43.75vw;
+  border-radius: 7.25vw;
+  background-color: #fff;
+  box-shadow: 0.5vw 0.5vw 3.75vw rgba(0, 0, 0, 0.2);
+  padding-top: 5vw;
+  padding-right: 4vw;
+  padding-bottom: 6.25vw;
+  padding-left: 4.5vw;
+  box-sizing: border-box;
+  margin-bottom: 6vw;
+}
+.container .wrap article section.p2 ul li h3 {
+  font-size: 5.75vw;
+  font-weight: 600;
+  margin-bottom: 5.5vw;
+}
+.container .wrap article section.p2 ul li p {
+  font-size: 4.5vw;
+  line-height: 6vw;
+}
+.container .wrap article section.p2 ul li .m-price p {
+  font-size: 10vw;
+  line-height: 13.5vw;
+}
+.container .wrap article section.p2 ul li .c-inner img {
+  width: 21vw;
+  height: 13.5vw;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2vw;
+}
+.container .wrap article section.p2 ul li .c-inner .card-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p2 ul li .c-inner .card-info p {
+  font-size: 4.5vw;
+  color: #717171;
+  font-weight: 500;
+}
+.container .wrap article section.p2 ul li .c-inner .card-info p + p {
+  font-size: 5vw;
+  line-height: 8.25vw;
+  font-weight: 700;
+  letter-spacing: -0.065em;
+}
+.container .wrap article section.p2 ul li .txt {
+  font-size: 4vw;
+  font-weight: 500;
+  width: 59.25vw;
+  display: inline-block;
+  vertical-align: middle;
+  word-break: keep-all;
+}
+.container .wrap article section.p2 ul li .btn {
+  font-size: 5vw;
+  width: 16.25vw;
+  height: 9.5vw;
+  line-height: 9.5vw;
+  margin-top: 2.5vw;
+  float: right;
+}
+.container .wrap footer {
+  width: 100%;
+  position: fixed;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+  border-top: 1px solid #333;
+  background-color: #fff;
+  z-index: 10;
+}
+.container .wrap footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.container .wrap footer ul li {
+  vertical-align: middle;
+  padding-top: 5.5vw;
+  padding-right: 0vw;
+  padding-bottom: 5.5vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  align-items: center;
+}
+.container .wrap footer ul li:nth-child(1) img {
+  width: 10.3975vw;
+  height: 10.3975vw;
+}
+.container .wrap footer ul li:nth-child(2) img {
+  width: 10.4675vw;
+  height: 10.4675vw;
+}
+.container .wrap footer ul li:nth-child(3) img {
+  width: 11.385vw;
+  height: 10.31vw;
+}
+.container .wrap footer ul li:nth-child(4) img {
+  width: 6.9325vw;
+  height: 10.3975vw;
+}
+.container .wrap footer ul li:nth-child(5) img {
+  width: 10.25vw;
+  height: 4vw;
+  margin-top: 3.25vw;
+  margin-right: 0vw;
+  margin-bottom: 3.25vw;
+  margin-left: 0vw;
+}
+.container .wrap footer ul li p {
+  font-size: 3.25vw;
+  margin-top: 0.75vw;
+}
+/*# sourceMappingURL=mobile.css.map */
