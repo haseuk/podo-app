@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <g id="그룹_55" data-name="그룹 55" transform="translate(-364 -287)">
+    <g id="타원_8" data-name="타원 8" transform="translate(364 287)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+      <circle cx="10.5" cy="10.5" r="10" fill="none"/>
+    </g>
+    <text id="_" data-name="!" transform="translate(372 303)" fill="#707070" font-size="16" font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo" font-weight="600"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>

@@ -32,6 +32,37 @@ h4 {
   font-weight: 700;
   background-color: #614668;
   cursor: pointer;
+  z-index: 1;
+}
+.s-btn {
+  font-size: 4.25vw;
+  width: 15.5vw;
+  height: 7vw;
+  line-height: 7vw;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2.5vw;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 700;
+  background-color: #614668;
+  cursor: pointer;
+}
+.shadow {
+  box-shadow: 0.75vw 1.25vw 2vw rgba(0, 0, 0, 0.2);
+}
+input,
+select,
+textarea {
+  outline: none;
+}
+.unlist-st {
+  width: auto;
+  height: auto;
+  border-radius: 0vw;
+  box-shadow: none;
+  padding: 0vw;
+  margin: 0vw;
 }
 html {
   font-size: 18px;
@@ -48,7 +79,10 @@ html {
   right: auto;
   bottom: auto;
   width: 100%;
-  padding: 4vw;
+  padding-top: 6.5vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  padding-left: 4vw;
   box-sizing: border-box;
   border-bottom: 1px solid #707070;
   zoom: 1;
@@ -110,11 +144,23 @@ html {
   width: auto;
   height: 6.61vw;
 }
+.container .wrap header .h-inner .prev img {
+  width: 5.5vw;
+  height: 5.5vw;
+  margin-top: 1.25vw;
+}
+.container .wrap header .h-inner p {
+  font-size: 6.75vw;
+  line-height: 7.5vw;
+  margin-top: 0vw;
+  float: right;
+  color: #000;
+}
 .container .wrap article {
   overflow: hidden;
   position: absolute;
   left: 0vw;
-  top: 15.75vw;
+  top: 18vw;
   right: auto;
   bottom: auto;
   padding-top: 10vw;
@@ -125,7 +171,7 @@ html {
   text-align: left;
   padding-top: 0vw;
   padding-right: 5vw;
-  padding-bottom: 0vw;
+  padding-bottom: 12.5vw;
   padding-left: 7.5vw;
   box-sizing: border-box;
 }
@@ -149,19 +195,16 @@ html {
   float: right;
   margin-top: 4.25vw;
 }
-.container .wrap article section.p1 {
-  padding-bottom: 15vw;
-}
-.container .wrap article section.p1 .cell {
+.container .wrap article section .cell {
   margin-bottom: 8.75vw;
 }
-.container .wrap article section.p1 .cell h3 {
+.container .wrap article section .cell h3 {
   margin-bottom: 6.5vw;
 }
-.container .wrap article section.p1 .cell .c-inner {
+.container .wrap article section .cell .c-inner {
   zoom: 1;
 }
-.container .wrap article section.p1 .cell .c-inner:after {
+.container .wrap article section .cell .c-inner:after {
   content: '';
   display: block;
   clear: both;
@@ -169,31 +212,96 @@ html {
   height: 0;
   visibility: hidden;
 }
-.container .wrap article section.p1 .cell .c-inner img {
+.container .wrap article section .cell .c-inner img {
   width: 21vw;
   height: 13.5vw;
   display: inline-block;
   vertical-align: middle;
   margin-right: 7vw;
 }
-.container .wrap article section.p1 .cell .c-inner .card-info {
+.container .wrap article section .cell .c-inner .card-info {
   display: inline-block;
   vertical-align: middle;
 }
-.container .wrap article section.p1 .cell .c-inner .card-info p {
+.container .wrap article section .cell .c-inner .card-info p {
   font-size: 5vw;
   line-height: 6.75vw;
   color: #717171;
   margin-bottom: 0.75vw;
 }
-.container .wrap article section.p1 .cell .c-inner .card-info p + p {
+.container .wrap article section .cell .c-inner .card-info p + p {
   font-size: 4.5vw;
   margin-bottom: 0vw;
 }
-.container .wrap article section.p1 .cell .c-inner .c-chk {
+.container .wrap article section .cell .c-inner .c-chk {
   display: inline-block;
   vertical-align: middle;
   float: right;
+}
+.container .wrap article section .cell .c-inner .c-chk .s-btn {
+  margin-top: 6.5vw;
+}
+.container .wrap article section .cell + .cell {
+  margin-bottom: 8.5vw;
+}
+.container .wrap article section .cell + .cell h3 {
+  margin-bottom: 0.75vw;
+}
+.container .wrap article section .cell + .cell img {
+  width: 25.5vw;
+  height: 25.5vw;
+  margin-right: 2.5vw;
+}
+.container .wrap article section ul li {
+  width: 88vw;
+  height: 43.75vw;
+  border-radius: 7.25vw;
+  background-color: #fff;
+  box-shadow: 0.5vw 0.5vw 3.75vw rgba(0, 0, 0, 0.2);
+  padding-top: 5vw;
+  padding-right: 4vw;
+  padding-bottom: 6.25vw;
+  padding-left: 4.5vw;
+  box-sizing: border-box;
+  margin-bottom: 6vw;
+}
+.container .wrap article section .content-add {
+  text-align: center;
+}
+.container .wrap article section .content-add .add {
+  margin-top: 22vw;
+  margin-right: 0vw;
+  margin-bottom: 22vw;
+  margin-left: 0vw;
+  display: inline-block;
+}
+.container .wrap article section .content-add .add img {
+  width: 18.5vw;
+  height: 18.5vw;
+}
+.container .wrap article section .content-add .noti {
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 6.75vw;
+}
+.container .wrap article section .content-add .noti s {
+  font-weight: 700;
+}
+.container .wrap article section .submit {
+  font-size: 6vw;
+  width: 100%;
+  height: 12.25vw;
+  line-height: 12.25vw;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: #624769;
+  display: inline-block;
+  position: fixed;
+  left: 0vw;
+  bottom: 26.75vw;
+  right: auto;
+  top: auto;
 }
 .container .wrap article section.p1 .cell .c-inner .c-chk label input[type=radio] + i {
   width: 5vw;
@@ -220,11 +328,7 @@ html {
   background-color: #212121;
   border-radius: 50%;
 }
-.container .wrap article section.p1 .cell .c-inner .c-chk label .btn {
-  font-size: 4.25vw;
-  width: 15.5vw;
-  height: 7vw;
-  line-height: 7vw;
+.container .wrap article section.p1 .cell .c-inner .c-chk label .s-btn {
   margin-top: 2.25vw;
 }
 .container .wrap article section.p1 .cell + .cell {
@@ -268,19 +372,6 @@ html {
   font-size: 4.5vw;
   line-height: 6.75vw;
   font-weight: 500;
-}
-.container .wrap article section.p2 ul li {
-  width: 88vw;
-  height: 43.75vw;
-  border-radius: 7.25vw;
-  background-color: #fff;
-  box-shadow: 0.5vw 0.5vw 3.75vw rgba(0, 0, 0, 0.2);
-  padding-top: 5vw;
-  padding-right: 4vw;
-  padding-bottom: 6.25vw;
-  padding-left: 4.5vw;
-  box-sizing: border-box;
-  margin-bottom: 6vw;
 }
 .container .wrap article section.p2 ul li h3 {
   font-size: 5.75vw;
@@ -332,6 +423,933 @@ html {
   line-height: 9.5vw;
   margin-top: 2.5vw;
   float: right;
+}
+.container .wrap article section.p3 {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 25vw;
+  padding-left: 0vw;
+}
+.container .wrap article section.p3 .cell {
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 11.25vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #707070;
+}
+.container .wrap article section.p3 .cell + .cell {
+  padding-bottom: 7.5vw;
+}
+.container .wrap article section.p3 .cell + .cell .c-inner .c-chk .s-btn {
+  margin-top: 8.75vw;
+}
+.container .wrap article section.p3 .btn {
+  font-size: 7.5vw;
+  width: 32.25vw;
+  height: 14vw;
+  line-height: 14vw;
+  border-radius: 4.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31.25vw;
+}
+.container .wrap article section.p4 ul li {
+  position: relative;
+  padding-top: 9.75vw;
+  padding-right: 4.25vw;
+  padding-bottom: 9.75vw;
+  padding-left: 8.5vw;
+  box-sizing: border-box;
+  height: 41.25vw;
+}
+.container .wrap article section.p4 ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap article section.p4 ul li a img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p4 ul li a p {
+  font-size: 6.25vw;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 32vw;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.container .wrap article section.p4 ul li a .select {
+  position: absolute;
+  right: 4.25vw;
+  top: 50%;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.container .wrap article section.p4 ul li.list1 a img {
+  width: 15.25vw;
+  height: 21.75vw;
+}
+.container .wrap article section.p4 ul li.list1 a .select {
+  width: 5.5vw;
+  height: 5.5vw;
+}
+.container .wrap article section.p4 ul li.list2 {
+  padding-bottom: 9.25vw;
+}
+.container .wrap article section.p4 ul li.list2 a img {
+  width: 18.5vw;
+  height: 22.25vw;
+  margin-top: 2.25vw;
+}
+.container .wrap article section.p4 ul li.list2 a .select {
+  width: 5.5vw;
+  height: 5.5vw;
+  margin-top: 0vw;
+}
+.container .wrap article section.p5 .tit {
+  font-size: 6vw;
+  line-height: 8vw;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6vw;
+}
+.container .wrap article section.p5 .tit img {
+  width: 4vw;
+  height: 4vw;
+  margin-bottom: 1.25vw;
+}
+.container .wrap article section.p5 ul li {
+  border-radius: 0vw;
+  height: 34vw;
+  padding: 0vw;
+}
+.container .wrap article section.p5 ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding-top: 9.75vw;
+  padding-right: 5.75vw;
+  padding-bottom: 9.75vw;
+  padding-left: 5.75vw;
+  box-sizing: border-box;
+}
+.container .wrap article section.p5 ul li a img {
+  width: 21vw;
+  height: 13.5vw;
+  margin-right: 3.5vw;
+}
+.container .wrap article section.p5 ul li a .p-wrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p5 ul li a .p-wrap p {
+  font-size: 5vw;
+  color: #717171;
+  text-align: left;
+  font-weight: 600;
+}
+.container .wrap article section.p5 ul li a .p-wrap p + p {
+  font-size: 4.5vw;
+}
+.container .wrap article section.p5 ul li a .select {
+  width: 5.5vw;
+  height: 5.5vw;
+  float: right;
+  margin-top: 5vw;
+}
+.container .wrap article section.p6,
+.container .wrap article section.p10 {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 12.5vw;
+  padding-left: 0vw;
+  border-bottom: 1px solid #707070;
+}
+.container .wrap article section.p6 .inner,
+.container .wrap article section.p10 .inner {
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+}
+.container .wrap article section.p6 .inner h2,
+.container .wrap article section.p10 .inner h2 {
+  font-weight: 700;
+  margin-bottom: 3.25vw;
+}
+.container .wrap article section.p6 .inner .txt,
+.container .wrap article section.p10 .inner .txt {
+  font-size: 4vw;
+  line-height: 6.25vw;
+  text-align: left;
+}
+.container .wrap article section.p13 {
+  padding-bottom: 5vw;
+}
+.container .wrap article section.p13 .txt {
+  font-size: 3.75vw;
+  line-height: 5.5vw;
+  margin-top: 1.25vw;
+  color: #707070;
+  margin-bottom: 3.25vw;
+}
+.container .wrap article section.p13 .posi-add {
+  background-color: #E6E5E5;
+  padding-top: 1.5vw;
+  padding-right: 3.25vw;
+  padding-bottom: 1.5vw;
+  padding-left: 3.25vw;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 2.25vw;
+  margin-bottom: 7.5vw;
+}
+.container .wrap article section.p13 .posi-add img {
+  width: 4vw;
+  height: 4vw;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75vw;
+}
+.container .wrap article section.p13 .posi-add p {
+  font-size: 4vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p13 .table table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+}
+.container .wrap article section.p13 .table table tr th {
+  height: 32.5vw;
+  position: relative;
+}
+.container .wrap article section.p13 .table table tr th a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap article section.p13 .table table tr th a img {
+  width: 11.5vw;
+  height: 11.5vw;
+}
+.container .wrap article section.p13 .table table tr th a p {
+  font-size: 3.75vw;
+  line-height: 4.75vw;
+  font-weight: 700;
+  color: #707070;
+  margin-top: 2.5vw;
+}
+.container .wrap article section.p14 input {
+  font-size: 5.75vw;
+  width: 100%;
+  height: 20vw;
+  line-height: 20vw;
+  padding-left: 7.5vw;
+  border: 0;
+}
+.container .wrap article section.p14 ::placeholder {
+  font-size: 5.75vw;
+}
+.container .wrap article section.p14 textarea {
+  font-size: 4.5vw;
+  width: 100%;
+  height: 46.25vw;
+  padding-top: 7.5vw;
+  padding-right: 7.5vw;
+  padding-bottom: 7.5vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  text-align: left;
+  vertical-align: top;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+.container .wrap article section.p14 .content-add {
+  padding-bottom: 12.5vw;
+}
+.container .wrap article section.p14 .manager-box {
+  padding-top: 7.5vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+  border-top: 1px solid #707070;
+}
+.container .wrap article section.p14 .manager-box ul li {
+  text-align: left;
+  padding: 0vw;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  margin-bottom: 2.25vw;
+  zoom: 1;
+}
+.container .wrap article section.p14 .manager-box ul li:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap article section.p14 .manager-box ul li p {
+  font-size: 5vw;
+  line-height: 6.75vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p14 .manager-box ul li .switch {
+  width: 8.75vw;
+  height: 5.5vw;
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 0.75vw;
+}
+.container .wrap article section.p14 .manager-box ul li .switch input {
+  font-size: 0vw;
+  width: 0vw;
+  height: 0vw;
+  line-height: 0vw;
+  padding-left: 0vw;
+  opacity: 0;
+}
+.container .wrap article section.p14 .manager-box ul li .switch .slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.1s;
+  border-radius: 2.75vw;
+}
+.container .wrap article section.p14 .manager-box ul li .switch .slider:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 4.5vw;
+  height: 4.5vw;
+  left: 0.5vw;
+  top: 0.5vw;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.1s;
+}
+.container .wrap article section.p14 .manager-box ul li .switch input:checked + .slider {
+  background-color: #0A9014;
+}
+.container .wrap article section.p14 .manager-box ul li .switch input:checked + .slider:before {
+  transform: translateX(3.25vw);
+}
+.container .wrap article section.p14 .manager-box ul li + li {
+  margin-bottom: 0vw;
+}
+.container .wrap article section.p17 {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 12.5vw;
+  padding-left: 0vw;
+}
+.container .wrap article section.p17 h4,
+.container .wrap article section.p17 .deposit {
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+}
+.container .wrap article section.p17 .deposit {
+  font-size: 12.5vw;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+.container .wrap article section.p17 .diposit-list {
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #707070;
+}
+.container .wrap article section.p17 .diposit-list li {
+  width: auto;
+  height: auto;
+  border-radius: 0vw;
+  box-shadow: none;
+  padding: 0vw;
+  margin: 0vw;
+  padding-top: 7.5vw;
+  padding-right: 0vw;
+  padding-bottom: 10vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  zoom: 1;
+}
+.container .wrap article section.p17 .diposit-list li:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap article section.p17 .diposit-list li .tit {
+  font-size: 5.5vw;
+  font-weight: 600;
+  line-height: 7.5vw;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p17 .diposit-list li .s-btn {
+  float: right;
+}
+.container .wrap article section.p17 .diposit-list li .cont {
+  margin-top: 3.5vw;
+}
+.container .wrap article section.p17 .diposit-list li .cont .list {
+  zoom: 1;
+}
+.container .wrap article section.p17 .diposit-list li .cont .list:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap article section.p17 .diposit-list li .cont .list .txt,
+.container .wrap article section.p17 .diposit-list li .cont .list .price {
+  font-size: 4vw;
+  line-height: 6vw;
+  display: inline-block;
+}
+.container .wrap article section.p17 .diposit-list li .cont .list .price {
+  float: right;
+}
+.container .wrap article section.p17 .complaints {
+  padding: 7.5vw;
+  box-sizing: border-box;
+  zoom: 1;
+}
+.container .wrap article section.p17 .complaints:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap article section.p17 .complaints h2 {
+  margin-bottom: 4.25vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section.p17 .complaints .com-num {
+  font-size: 6.25vw;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 9.75vw;
+  height: 9.75vw;
+  border-radius: 50%;
+  background-color: #BC0E0E;
+  float: right;
+  margin-top: 2.5vw;
+  padding-top: 0.5vw;
+  box-sizing: border-box;
+}
+.container .wrap article section.p17 .complaints .comp-list li {
+  width: 84.25vw;
+  height: 13.75vw;
+  border-radius: 3.75vw;
+  margin-bottom: 3.5vw;
+}
+.container .wrap article section.p17 .complaints .comp-list li p {
+  font-size: 3.75vw;
+  line-height: 5vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  height: 1.2em;
+}
+.container .wrap article.arti-sub {
+  padding-top: 0vw;
+}
+.container .wrap article.arti-sub section {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 25vw;
+  padding-left: 0vw;
+}
+.container .wrap article.arti-sub section .tab {
+  margin-bottom: 9.25vw;
+}
+.container .wrap article.arti-sub section .tab ul {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 0vw;
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section .tab ul li {
+  width: 25%;
+  height: 8.5vw;
+  line-height: 8.5vw;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: none;
+  padding: 0vw;
+  margin: 0vw;
+  border-radius: 0vw;
+}
+.container .wrap article.arti-sub section .tab ul li a {
+  font-size: 3.75vw;
+  line-height: 8.5vw;
+  color: #707070;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap article.arti-sub section .tab ul li.on {
+  border-top: 1.25vw solid #5D4363;
+}
+.container .wrap article.arti-sub section .content {
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 7.5vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section .content .h3 {
+  margin-bottom: 2.25vw;
+}
+.container .wrap article.arti-sub section .content .txt {
+  font-size: 4.5vw;
+  font-weight: 500;
+  color: #707070;
+}
+.container .wrap article.arti-sub section.p7 .content h3 {
+  margin-bottom: 2.25vw;
+}
+.container .wrap article.arti-sub section.p7 .content .select-box {
+  margin-top: 7vw;
+  margin-right: 0vw;
+  margin-bottom: 3.75vw;
+  margin-left: 0vw;
+}
+.container .wrap article.arti-sub section.p7 .content .select-box ul li {
+  width: 26.75vw;
+  height: 22vw;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #F2F2F2;
+  border-radius: 2.5vw;
+  box-shadow: none;
+  margin-top: 0vw;
+  margin-right: 2.25vw;
+  margin-bottom: 0vw;
+  margin-left: 0vw;
+  padding: 0vw;
+}
+.container .wrap article.arti-sub section.p7 .content .select-box ul li a {
+  font-size: 4vw;
+  color: #000;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-top: 4vw;
+  padding-right: 3vw;
+  padding-bottom: 4vw;
+  padding-left: 3vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section.p7 .content .select-box ul li:last-child {
+  margin-right: 0vw;
+}
+.container .wrap article.arti-sub section.p7 .content input {
+  font-size: 6.25vw;
+  width: 82.25vw;
+  height: 14.25vw;
+  line-height: 14.25vw;
+  text-align: left;
+  padding-left: 5vw;
+  box-sizing: border-box;
+  border: 0;
+  box-shadow: 0.75vw 1.25vw 2vw rgba(0, 0, 0, 0.2);
+  margin-top: 3vw;
+}
+.container .wrap article.arti-sub section.p8 .content h3,
+.container .wrap article.arti-sub section.p11 .content h3 {
+  font-weight: 700;
+  margin-bottom: 2.25vw;
+}
+.container .wrap article.arti-sub section.p8 .content .input-box,
+.container .wrap article.arti-sub section.p11 .content .input-box {
+  margin-top: 7vw;
+}
+.container .wrap article.arti-sub section.p8 .content .input-box .box,
+.container .wrap article.arti-sub section.p11 .content .input-box .box {
+  width: 87vw;
+  height: 12.75vw;
+  line-height: 12.75vw;
+  box-shadow: 0.75vw 1.25vw 2vw rgba(0, 0, 0, 0.2);
+  margin-bottom: 3.75vw;
+}
+.container .wrap article.arti-sub section.p8 .content .input-box .box input,
+.container .wrap article.arti-sub section.p11 .content .input-box .box input {
+  font-size: 5vw;
+  font-weight: 500;
+  padding-top: 0vw;
+  padding-right: 5vw;
+  padding-bottom: 0vw;
+  padding-left: 5vw;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.container .wrap article.arti-sub section.p8 .content .input-box .box input.search-input,
+.container .wrap article.arti-sub section.p11 .content .input-box .box input.search-input {
+  width: 66vw;
+  margin-right: 2vw;
+}
+.container .wrap article.arti-sub section.p8 .content .input-box .box .search-btn,
+.container .wrap article.arti-sub section.p11 .content .input-box .box .search-btn {
+  font-size: 4.25vw;
+  width: 17vw;
+  height: 9vw;
+  line-height: 9vw;
+  text-align: center;
+}
+.container .wrap article.arti-sub section.p10 {
+  padding-bottom: 12.5vw;
+}
+.container .wrap article.arti-sub section.p10 .inner h3 {
+  margin-bottom: 2.25vw;
+  font-weight: 700;
+}
+.container .wrap article.arti-sub section.p10 .inner .txt {
+  font-size: 4.5vw;
+  color: #707070;
+}
+.container .wrap article.arti-sub section.p10 .inner .content {
+  padding: 0vw;
+}
+.container .wrap article.arti-sub section.p11 .content .txt {
+  margin-bottom: 5.25vw;
+}
+.container .wrap article.arti-sub section.p11 .content h4 {
+  margin-bottom: 3.75vw;
+}
+.container .wrap article.arti-sub section.p11 .content .select {
+  position: relative;
+}
+.container .wrap article.arti-sub section.p11 .content .select:after {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/icon_down.svg');
+  background-size: contain;
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 4.5vw;
+  top: 3.75vw;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap article.arti-sub section.p11 .content .select select {
+  font-size: 5vw;
+  width: 87vw;
+  height: 12.75vw;
+  line-height: 12.75vw;
+  box-shadow: 0.75vw 1.25vw 2vw rgba(0, 0, 0, 0.2);
+  border: 0;
+  padding-left: 5vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section.p11 .content .input-box {
+  margin-top: 3.75vw;
+}
+.container .wrap article.arti-sub section.p11 .content .input-box input::placeholder {
+  text-align: center;
+  color: #B2B2B2;
+}
+.container .wrap article.arti-sub section.p15 ul li,
+.container .wrap article.arti-sub section.p20 ul li {
+  width: auto;
+  height: auto;
+  border-radius: 0vw;
+  box-shadow: none;
+  padding: 0vw;
+  margin: 0vw;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul,
+.container .wrap article.arti-sub section.p20 .tab2 ul {
+  background-color: #F4F4F4;
+  padding-left: 2.5vw;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul li,
+.container .wrap article.arti-sub section.p20 .tab2 ul li {
+  width: 33.3%;
+  padding-top: 5vw;
+  padding-right: 0vw;
+  padding-bottom: 6vw;
+  padding-left: 0vw;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #F4F4F4;
+  position: relative;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul li:last-child:after,
+.container .wrap article.arti-sub section.p20 .tab2 ul li:last-child:after {
+  display: none;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul li:after,
+.container .wrap article.arti-sub section.p20 .tab2 ul li:after {
+  content: '';
+  display: block;
+  width: 0.25vw;
+  height: 2.75vw;
+  background-color: #707070;
+  position: absolute;
+  right: 0vw;
+  top: 6.75vw;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul li a,
+.container .wrap article.arti-sub section.p20 .tab2 ul li a {
+  font-size: 4.5vw;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #707070;
+}
+.container .wrap article.arti-sub section.p15 .tab2 ul li.on,
+.container .wrap article.arti-sub section.p20 .tab2 ul li.on {
+  font-weight: 700;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li,
+.container .wrap article.arti-sub section.p20 .cp-list ul li {
+  padding-top: 8vw;
+  padding-right: 5vw;
+  padding-bottom: 8.75vw;
+  padding-left: 5vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #707070;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li img,
+.container .wrap article.arti-sub section.p20 .cp-list ul li img {
+  width: 11.5vw;
+  height: 11.5vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .cont,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .cont {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 5vw;
+  width: 61.25vw;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .cont p,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .cont p {
+  width: 61.25vw;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .cont .tit,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .cont .tit {
+  font-size: 4.25vw;
+  font-weight: 600;
+  margin-bottom: 0.75vw;
+  height: 1.2em;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .cont .txt,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .cont .txt {
+  font-size: 3.25vw;
+  padding-top: 0.25vw;
+  box-sizing: border-box;
+  color: #707070;
+  word-break: keep-all;
+  height: 2.4em;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .date,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .date {
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .date p,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .date p {
+  font-size: 3.75vw;
+  color: #707070;
+  font-weight: 600;
+  text-align: left;
+}
+.container .wrap article.arti-sub section.p15 .cp-list ul li .date img,
+.container .wrap article.arti-sub section.p20 .cp-list ul li .date img {
+  width: 5.25vw;
+  height: 5.5vw;
+  margin-top: 4.25vw;
+  margin-right: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 2.5vw;
+}
+.container .wrap article.arti-sub section.p18,
+.container .wrap article.arti-sub section.p19 {
+  padding-top: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 12.5vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #707070;
+  min-height: 142.5vw;
+}
+.container .wrap article.arti-sub section.p18 .sec-inner,
+.container .wrap article.arti-sub section.p19 .sec-inner {
+  padding-top: 2vw;
+  padding-right: 3.75vw;
+  padding-bottom: 2vw;
+  padding-left: 3.75vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section.p18 .sec-inner .select-box,
+.container .wrap article.arti-sub section.p19 .sec-inner .select-box {
+  display: inline-block;
+  position: relative;
+}
+.container .wrap article.arti-sub section.p18 .sec-inner .select-box:after,
+.container .wrap article.arti-sub section.p19 .sec-inner .select-box:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 3.75vw;
+  top: 50%;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+  width: 2vw;
+  height: 5vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/icon_arrow.svg');
+  background-size: contain;
+  pointer-events: none;
+}
+.container .wrap article.arti-sub section.p18 .sec-inner .select-box select,
+.container .wrap article.arti-sub section.p19 .sec-inner .select-box select {
+  font-size: 4.25vw;
+  width: 45.75vw;
+  height: 12.75vw;
+  border-radius: 2vw;
+  border: 1px solid #D9D9D9;
+  padding-left: 3.75vw;
+  box-sizing: border-box;
+}
+.container .wrap article.arti-sub section.p18 .sec-inner .prime,
+.container .wrap article.arti-sub section.p19 .sec-inner .prime {
+  width: 20.5vw;
+  float: right;
+  margin-top: 3.25vw;
+  font-weight: 500;
+}
+.container .wrap article.arti-sub section.p18 .detail-view,
+.container .wrap article.arti-sub section.p19 .detail-view {
+  background-color: #F4F4F4;
+  padding-top: 6vw;
+  padding-right: 0vw;
+  padding-bottom: 6vw;
+  padding-left: 0vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .wrap article.arti-sub section.p18 .detail-view .inner,
+.container .wrap article.arti-sub section.p19 .detail-view .inner {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.container .wrap article.arti-sub section.p18 .detail-view .inner:after,
+.container .wrap article.arti-sub section.p19 .detail-view .inner:after {
+  content: '';
+  display: block;
+  width: 0.25vw;
+  height: 11.5vw;
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  left: auto;
+  bottom: auto;
+  background-color: #707070;
+}
+.container .wrap article.arti-sub section.p18 .detail-view .inner img,
+.container .wrap article.arti-sub section.p19 .detail-view .inner img {
+  width: 13.25vw;
+  height: 12.75vw;
+  margin-right: 2.5vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article.arti-sub section.p18 .detail-view .inner p,
+.container .wrap article.arti-sub section.p19 .detail-view .inner p {
+  font-size: 4.25vw;
+  line-height: 5.75vw;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  letter-spacing: -0.07em;
+}
+.container .wrap article.arti-sub section.p18 .detail-view .inner + .inner:after,
+.container .wrap article.arti-sub section.p19 .detail-view .inner + .inner:after {
+  display: none;
+}
+.container .wrap article.arti-sub section.p20 {
+  border-bottom: 1px solid #707070;
+  min-height: 142.5vw;
+}
+.container .wrap article.arti-sub section.p20 .cp-list .content-add .add {
+  margin-top: 34.75vw;
+  margin-right: 0vw;
+  margin-bottom: 34.75vw;
+  margin-left: 0vw;
+}
+.container .wrap article.arti-sub section.p20 .cp-list .content-add .noti {
+  font-size: 5vw;
+}
+.container .wrap article ::placeholder {
+  font-size: 5vw;
+  color: #B2B2B2;
 }
 .container .wrap footer {
   width: 100%;
